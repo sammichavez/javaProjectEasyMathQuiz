@@ -12,13 +12,12 @@ public class Runner {
                 new Question(q1, "a");
                 new Question(q2, "c");
                 new Question(q3, "c");
-
-
          }
          takeIt(questions);
     }
         public static void takeIt( Question [] questions){
             int score = 0;
+
             Scanner keyboardInput = new Scanner(system.in);
 
             for(int i = 0; i < questions.length; i++){
