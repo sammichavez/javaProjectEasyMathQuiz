@@ -19,14 +19,14 @@ public class Runner {
         String q5 = "What Is 8456 Inches Converted into Centimeters?\n"
                 + "(a)21478.24\n(b)21480.78\n(c)21485.86\n";
 
-        String q6 = "What Is A Mole In Chemistry Terms\n"
+        String q6 = "What Is A Mole In Chemistry Terms?\n"
                 + "(a) 6.022 x 1023\n(b) 6.023 x 1024\n(c) 6.034 x 1011\n";
         //The Art questions
-        String q7 = "What Is One Of The Primary Colors\n"
+        String q7 = "What Is One Of The Primary Colors?\n"
                 + "(a)Blue\n(b)Grey\n(c)Pink\n";
 
-        String q8 = "What Is My Favorite Color\n"
-                + "(a)Blue\n(b)Purple\n(c)Black,Please Dont Pick This, That's Sad Lol";
+        String q8 = "What Is My Favorite Color?\n"
+                + "(a)Blue\n(b)Purple\n(c)Black,Please Don't Pick This, That's Sad Lol";
 
         Question[] questions = {
                 new Question(q1 , "a"),
@@ -40,7 +40,7 @@ public class Runner {
          };
          takeIt(questions);
     }
-        public static void takeIt( Question [] questions) {
+       public static void takeIt( Question [] questions) {
             int score = 0;
 
             Scanner keyboardInput = new Scanner(System.in);
@@ -48,11 +48,11 @@ public class Runner {
             for (int i = 0; i < questions.length; i++) {
                 System.out.println(questions[i].prompt);
                 String answer = keyboardInput.nextLine();
-                if(answer.equals(questions[i].answer)) ;
+                if(answer.equals(questions[i].answer))
                 score++;
             }
-            System.out.println("You Were Able To Get a " + score + "/" + questions.length);
+         System.out.println("You Were Able To Get a " + score + "/" + questions.length);
 
             System.out.println("If You Got Some Wrong, The Correct Answers are: 1a , 2c, 3c , 4b , 5a , 6a , 7a , 8b");
-        }
+    }
 }
